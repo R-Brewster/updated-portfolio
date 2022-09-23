@@ -1,0 +1,39 @@
+
+h2, h3, h4, h5, h6, p, a {
+    /* @apply font-tower;  */
+	font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+	font-family: 'Merriweather', serif;
+}
+
+
+.medium {
+	/* @apply font-medium; */
+	font-weight: 600;
+}
+
+body.page p {
+	margin-bottom: 30px;
+	font-size: 20px;
+}
+
+body.page a {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+}
+
+body.page a:hover {
+	color: var(--red);
+	text-decoration: underline;
+	text-decoration-thickness: 1px;
+}
+
+.heading-font {
+	font-family: 'Merriweather', serif;
+}
+
+body.page h2:after {
+	margin-top: -30px !important;
+}

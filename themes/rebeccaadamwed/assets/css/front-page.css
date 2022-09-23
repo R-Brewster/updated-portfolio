@@ -1,0 +1,231 @@
+
+/* FP Banner */
+.fp-banner .kt-inside-inner-col {
+    position: relative;
+}
+
+.fp-banner .kt-inside-inner-col:before {
+    content: "";
+    height: 2px;
+    width: 0;
+    background-color: var(--blue);
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+    bottom: auto;
+}
+
+.fp-banner .kt-inside-inner-col:after {
+    content: "";
+    height: 2px;
+    width: 0;
+    background-color: var(--blue);
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: auto;
+    bottom: 0;
+    transition: all 1s ease-in-out;
+}
+
+.fp-banner .kt-inside-inner-col.start-transition:before, .fp-banner .kt-inside-inner-col.start-transition:after {
+    width: 100%;
+    transition: all 1s ease-in-out;
+}
+
+/* About the Location */
+
+.fp-location {
+    position: relative;
+}
+
+.fp-location .inner-column-2 figure {
+    margin-bottom: 0;          
+}
+
+.fp-location .inner-column-2 img {
+    height: 800px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 0;
+    object-position: center left;
+}
+
+.fp-location .inner-column-3 {
+    max-height: 100%;
+    position: static;
+}
+
+.fp-location .inner-column-3 .kt-inside-inner-col {
+    max-height: 100%;
+    position: static;
+}
+
+.fp-location .inner-column-3 .kt-inside-inner-col figure {
+    max-height: 100%;
+    position: static;
+}
+
+.fp-location .inner-column-3 .kt-inside-inner-col figure img {
+    max-height: 100%;
+}
+
+/* Event info */
+
+.fp-info .inner-column-1 figure {
+    margin-bottom: 0;
+}
+
+.fp-info .inner-column-1 img {
+    height: 800px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 0;
+    object-position: center right;
+}
+
+.fp-info .inner-column-3 {
+    max-height: 100%;
+    position: static;
+}
+
+.fp-info .inner-column-3 .kt-inside-inner-col {
+    max-height: 100%;
+    position: static;
+}
+
+.fp-info .inner-column-3 .kt-inside-inner-col figure {
+    max-height: 100%;
+    position: static;
+}
+
+.fp-info .inner-column-3 .kt-inside-inner-col figure img {
+    max-height: 100%;
+}
+
+/* Out of Town */
+
+.fp-out-of-town .kt-inside-inner-col {
+    position: relative;
+    z-index: 2;
+    align-self: stretch;
+    height: 100%;
+}
+
+.fp-out-of-town .kt-inside-inner-col:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.fp-out-of-town .kt-inside-inner-col h3 {
+    position: relative;
+    z-index: 2;
+    transition: all 0.35s ease-in-out;
+}
+
+
+.fp-out-of-town .kt-inside-inner-col h3:before {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+    bottom: auto;
+    transition: all 0.35s ease-in-out;
+}
+
+.fp-out-of-town .kt-inside-inner-col h3:after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: auto;
+    bottom: -10px;
+    transition: all 1s ease-in-out;
+    transition: all 0.35s ease-in-out;
+}
+
+.fp-out-of-town .kt-inside-inner-col h3:hover a {
+    color: var(--red);
+    transition: all 0.35s ease-in-out;
+}
+
+.fp-out-of-town .kt-inside-inner-col h3:hover:before, 
+.fp-out-of-town .kt-inside-inner-col h3:hover:after {
+    background-color: var(--red);
+    transition: all 0.35s ease-in-out;
+}
+
+/* About Us */
+
+.fp-met .kt-inside-inner-col {
+    position: relative;
+}
+
+.fp-met .kt-inside-inner-col:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.fp-met .kt-inside-inner-col h3 {
+    position: relative;
+    z-index: 2;
+}
+
+.fp-met .kt-inside-inner-col a {
+    position: relative;
+    z-index: 2;
+}
+
+/* FP Bottom */
+
+.fp-bottom figure {
+    margin-bottom: 0;
+}
+
+/*Front page general styling*/
+
+body.home .entry-header {
+    display: none;
+}
+
+.kt-row-column-wrap {
+    position: relative;
+}
+
+.wp-block-kadence-column {
+    position: relative;
+    z-index: 2;
+}
+
+.opaque-on-mobile figure img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.2;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+

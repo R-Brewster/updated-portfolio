@@ -1,0 +1,15 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* Custom components */
+@import "./buttons.css";
+@import "./fonts.css";
+@import "./navigation.css";
+@import "./colors.css";
+@import "./layout.css";
+@import "./front-page.css";
+@import "./headings.css";
+@import "./links.css";
+@import "./hamburgers.css";
+

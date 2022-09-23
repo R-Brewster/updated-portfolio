@@ -1,0 +1,48 @@
+h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2.has-text-align-left {
+    align-items: flex-start;
+}
+
+/* body:not(.wp-admin) h2 {
+    text-decoration-line: underline;
+    text-decoration-style: double;
+    text-decoration-thickness: 1px;
+} */
+
+/* body:not(.wp-admin) h2:after {
+    content: "";
+    mask-image: url("../assets/images/vines-03-small.png");
+    -webkit-mask-image: url("../assets/images/vines-03-small.png");
+    mask-size: contain;
+    -webkit-mask-size: contain;
+    height: 50px;
+    width: 300px;
+    display:block;
+    margin-top: 0px;
+    background-color: black;
+} */
+
+body:not(.wp-admin) h2 {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 10px;
+    margin-bottom: 30px;
+}
+
+body:not(.wp-admin) h2.no-decoration:after {
+    content: none;
+}
+
+body:not(.wp-admin) h2.has-white-color:after {
+    background-color: white;
+}
+
+body.page h2 {
+    font-size: 32px;
+    font-weight: 500;
+}

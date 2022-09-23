@@ -1,0 +1,63 @@
+// Center block
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Column width with margin
+@mixin column-width($numberColumns: 3) {
+	width: map-get($columns, $numberColumns) - ( ( $columns__margin * ( $numberColumns - 1 ) ) / $numberColumns );
+}
+
+@mixin large {
+	@media (min-width: 1025px) { @content; }
+}
+
+@mixin xmedium {
+	@media (min-width: 769px) and (max-width: 1024px) { @content; }
+}
+
+@mixin medium {
+	@media (min-width: 641px) and (max-width: 768px) { @content; }
+}
+
+@mixin smedium {
+	@media (min-width: 421px) and (max-width: 640px) { @content; }
+}
+
+@mixin small {
+	@media (max-width: 420px) { @content; }
+}
+
+@mixin largeUp {
+	@media (min-width: 1025px) { @content; }
+}
+
+@mixin xmediumUp {
+	@media (min-width: 1024px) { @content; }
+}
+
+@mixin mediumUp {
+	@media (min-width: 768px) { @content; }
+}
+
+@mixin smediumUp {
+	@media (min-width: 641px) { @content; }
+}
+
+@mixin largeDown {
+	@media (max-width: 1025px) { @content; }
+}
+
+@mixin xmediumDown {
+	@media (max-width: 1024px) { @content; }
+}
+
+@mixin mediumDown {
+	@media (max-width: 768px) { @content; }
+}
+
+@mixin smediumDown {
+	@media (max-width: 641px) { @content; }
+}

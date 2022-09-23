@@ -1,0 +1,237 @@
+/* Desktop menu */
+.menu-menu-1-container {
+    background-color: transparent;
+    top: 0;
+    transition: all 0.25s ease-in-out;
+}
+
+#primary-menu {
+    display: flex;
+    padding: 10px 0;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#primary-menu .menu-item {
+    text-align: center;
+}
+
+#primary-menu .menu-item.with-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#primary-menu .menu-item.with-logo:hover {
+    cursor: pointer;
+}
+#primary-menu .menu-item.with-logo:hover:after {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#primary-menu .menu-item.with-logo a {
+    font-size: 0 !important;
+    height: 0;
+    width: 0;
+}
+
+#primary-menu .menu-item.with-logo:after {
+    content: "";
+    mask: url("../assets/images/wedding_logo_smaller.png");
+    -webkit-mask: url("../assets/images/wedding_logo_smaller.png");
+    width: 150px;
+    height: 83px;
+    background-color: white;
+    display: block;
+    mask-size: contain;
+    -webkit-mask-size: contain;
+    transition: all 0.35s ease-in-out;
+}
+
+#primary-menu .menu-item a {
+    color: white;
+    font-family: "tower-serif";
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    transition: all 0.35s ease-in-out;
+}
+
+#primary-menu .menu-item a:hover {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#primary-menu .menu-item a:hover:after {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#primary-menu .menu-item a:after {
+    content: "";
+    width: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: auto;
+    bottom: 0;
+    height: 1px;
+    background-color: white;
+    transition: all 0.35s ease-in-out;
+}
+
+#primary-menu .menu-item a:hover:after {
+    width: 100%;
+    transition: all 0.35s ease-in-out;
+}
+
+.sticky #primary-menu .menu-item a {
+    color: var(--blue);
+    transition: all 0.35s ease-in-out;
+}
+
+.sticky #primary-menu .menu-item a:after {
+    color: var(--red);
+    transition: all 0.35s ease-in-out;
+}
+
+.sticky #primary-menu .menu-item a:hover {
+    color: var(--red);
+    transition: all 0.35s ease-in-out;
+}
+
+.sticky  #primary-menu .menu-item a:hover:after {
+    background-color: var(--red);
+}
+
+.sticky .menu-menu-1-container {
+    background-color: rgba(255, 255, 255, 0.85);
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.25s ease-in-out;
+}
+
+.sticky #primary-menu .menu-item.with-logo:after {
+    background-color: var(--blue);
+}
+
+.sticky #primary-menu .menu-item.with-logo:hover:after {
+    background-color: var(--red) !important;
+}
+
+/*Interior Navigation */
+
+body.page #primary-menu .menu-item a {
+    color: var(--blue);
+    transition: all 0.35s ease-in-out;
+}
+
+body.page #primary-menu .menu-item a:after {
+    color: var(--red);
+    transition: all 0.35s ease-in-out;
+}
+
+body.page #primary-menu .menu-item a:hover {
+    color: var(--red);
+    transition: all 0.35s ease-in-out;
+}
+
+body.page  #primary-menu .menu-item a:hover:after {
+    background-color: var(--red);
+}
+
+body.page .menu-menu-1-container {
+    background-color: rgba(255, 255, 255, 0.85);
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.5);
+    transition: all 0.25s ease-in-out;
+}
+
+body.page #primary-menu .menu-item.with-logo:after {
+    background-color: var(--blue);
+}
+
+body.page #primary-menu .menu-item.with-logo:hover:after {
+    background-color: var(--red) !important;
+}
+
+/* Mobile menu */
+button.hamburger {
+    position: fixed;
+    z-index: 45;
+    background-color: rgba(160,95,93, 0.6);
+}
+
+button.hamburger:hover {
+    opacity: 1 !important;
+}
+
+button.hamburger .hamburger-box .hamburger-inner {
+    background-color: white;
+}
+
+button.hamburger .hamburger-box .hamburger-inner:before, button.hamburger .hamburger-box .hamburger-inner:after {
+    background-color: white;
+}
+
+.mobile-nav-container .menu-menu-1-container  {
+    position: fixed;
+    top: 0;
+    left: 0; 
+    background: linear-gradient(0deg, rgba(58,90,64,1) 0%, rgba(160,95,93,1) 100%);
+    z-index: 40;
+    width: 100vw;
+    height: 100vh;
+}
+
+.mobile-nav-container #primary-menu {
+    flex-direction: column;
+    height: 100%;
+    justify-content: flex-start;
+    margin-top: 85px;
+    position: relative;
+}
+
+/* .mobile-nav-container #primary-menu:after {
+    content: "";
+    background-image: url("../assets/images/whitedamask_0002_w_blue.jpg");
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    opacity: 0.025;
+    background-size: cover;
+} */
+
+.mobile-nav-container #primary-menu .menu-item {
+    color: white;
+    padding: 20px 0;
+    position: relative;
+    z-index: 45;
+}
+
+.mobile-nav-container #primary-menu .menu-item.with-logo a {
+   font-size: 20px;
+   height: auto;
+   width: auto;
+}
+
+.mobile-nav-container #primary-menu .menu-item.with-logo:after {
+    content: none;
+}
+
+.mobile-nav-container #primary-menu .menu-item a {
+    color: white !important;
+    font-size: 20px;
+}
+
+.mobile-nav-container #primary-menu .menu-item a:hover {
+    color: var(--red);
+}
+
+.mobile-nav-container #primary-menu .menu-item a:after {
+    background-color: var(--red);
+}
+
